@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #E5E5E5;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+}
+
+main {
+    background: url(../src/fondo.jfif) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+h5 {
+    font-size: 13px;
+}
+
+h6 {
+    margin-top: 5px;
+}
+
+.lsn__cnt {
+    display: grid;
+    width: 100%;
+    padding: 10%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.act__grp {
+    background: rgba(229, 229, 229, 0.5);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    padding: 0;
+    height: 200px;
+}
+
+.unt__btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background: none;
+}
+
+.unt__btn:hover {
+    background: #B6B6B6;
+    cursor: pointer;
+}
+
+.btn__mve {
+    border: none;
+}
+
+.btn__bgn {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    color: rgba(51, 51, 51, 0.5);
+    border-radius: 10px;
+}
+
+.btn__bgn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(51, 51, 51, 1);
+}
+
+.icn__mve {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+
+.btn__dsb {
+    display: none;
+}
+
+#btn_lft, #btn_rgt {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    background: none;
+    font-size: 30px;
+    color: transparent;
+}
+
+#btn_lft:hover,
+#btn_rgt:hover {
+    top: 47.5%;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+}
+
+#btn_lft {
+    left: 10px;
+}
+
+#btn_rgt {
+    right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .lsn__cnt {
+        grid-template-columns: 1fr;
+        padding-top: 15%;
+    }
+    
+    .act__grp {
+        height: 85px;
+    }
+
+    .btn__bgn {
+        top: 25%;
+        left: 20%;
+        width: 60%;
+        height: 60%;
+        font-size: 40px;
+    }
+}
